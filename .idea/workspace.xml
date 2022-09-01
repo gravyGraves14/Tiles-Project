@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="943f6c71-764e-493a-b61e-250c6dfb93dd" name="Changes" comment="Initial Commit" />
+    <list default="true" id="943f6c71-764e-493a-b61e-250c6dfb93dd" name="Changes" comment="Initial Commit">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662067598739</updated>
-      <workItem from="1662067600637" duration="586000" />
+      <workItem from="1662067600637" duration="1203000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1662067680561</created>
@@ -57,7 +59,42 @@
       <option name="project" value="LOCAL" />
       <updated>1662067858125</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit">
+      <created>1662068198454</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662068198454</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial Commit">
+      <created>1662068253351</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662068253351</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial Commit">
+      <created>1662068399037</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662068399037</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Initial Commit">
+      <created>1662068411211</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662068411211</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Initial Commit">
+      <created>1662068782340</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662068782340</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
