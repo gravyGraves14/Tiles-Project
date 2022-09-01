@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="943f6c71-764e-493a-b61e-250c6dfb93dd" name="Changes" comment="Initial Commit" />
+    <list default="true" id="943f6c71-764e-493a-b61e-250c6dfb93dd" name="Changes" comment="New Commit">
+      <change afterPath="$PROJECT_DIR$/src/Tiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TProject.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662067598739</updated>
-      <workItem from="1662067600637" duration="1674000" />
+      <workItem from="1662067600637" duration="1980000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1662067680561</created>
@@ -99,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662068944115</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="New Commit">
+      <created>1662069282136</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662069282136</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +128,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="New Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Commit" />
   </component>
 </project>
