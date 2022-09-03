@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="943f6c71-764e-493a-b61e-250c6dfb93dd" name="Changes" comment="Commited Classes into package">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="943f6c71-764e-493a-b61e-250c6dfb93dd" name="Changes" comment="New Readme input">
+      <change afterPath="$PROJECT_DIR$/src/mytiles/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mytiles/TProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mytiles/TProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mytiles/Tiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mytiles/Tiles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -28,13 +32,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,7 +47,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662067598739</updated>
-      <workItem from="1662067600637" duration="2608000" />
+      <workItem from="1662067600637" duration="31811000" />
+      <workItem from="1662133633589" duration="14247000" />
+      <workItem from="1662157343405" duration="26265000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1662067680561</created>
@@ -122,7 +128,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662070154726</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Commited Classes into package">
+      <created>1662070212512</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662070212512</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Read me making sure">
+      <created>1662070285308</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662070285308</updated>
+    </task>
+    <task id="LOCAL-00014" summary="New Readme input">
+      <created>1662070389579</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1662070389579</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +171,8 @@
     <MESSAGE value="New Commit" />
     <MESSAGE value="Commited Classes" />
     <MESSAGE value="Commited Classes into package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commited Classes into package" />
+    <MESSAGE value="Read me making sure" />
+    <MESSAGE value="New Readme input" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Readme input" />
   </component>
 </project>
