@@ -14,8 +14,9 @@ public class Tiles extends StackPane {
     Rectangle firstSet;
     Rectangle secondSet;
     Rectangle thirdSet;
-    private Color tileColor;
 
+
+    /*This method shuffles the colors*/
      public static Color[] myShuffle() {
         Color[] colorVal = {Color.RED, Color.BLUE, Color.GREEN, Color.YELLOW, Color.DARKCYAN, Color.BLUEVIOLET, Color.PINK, Color.BURLYWOOD,
                 Color.ORANGE, Color.GREY};
@@ -26,13 +27,32 @@ public class Tiles extends StackPane {
         return colorVal;
     }
 
-    public Color getTileColor() {
-         return tileColor;
+    /*This method adds the shuffled color
+    * to each individual rectangle*/
+    public Rectangle addColor(Rectangle rect) {
+
+         Color colorVal[] = myShuffle();
+         int choice = 0;
+
+         if(rect.equals(firstSet)) {
+             choice++;
+             rect.setFill(colorVal[choice]);
+
+         }
+         else if(rect.equals(secondSet)) {
+             choice++;
+             rect.setFill(colorVal[choice]);
+         }
+
+         else if(rect.equals(thirdSet)) {
+             choice++;
+             rect.setFill(colorVal[choice]);
+         }
+         return rect;
+
     }
 
 
-    /*This Class just shuffles my colors in
-     * a random order*/
 
 
     /*This Tiles constructor is just creating rectangles
@@ -42,47 +62,23 @@ public class Tiles extends StackPane {
 
         firstSet = new Rectangle(100, 100);
         firstSet.setStroke(Color.BLACK);
-        firstSet.setFill(Color.ORANGE);
         firstSet.setArcHeight(20);
         firstSet.setArcWidth(20);
         firstSet.setStrokeWidth(3);
 
         secondSet = new Rectangle(70, 70);
         secondSet.setStroke(Color.BLACK);
-        secondSet.setFill(Color.BLUE);
         secondSet.setArcHeight(20);
         secondSet.setArcWidth(20);
         secondSet.setStrokeWidth(3);
 
         thirdSet = new Rectangle(40, 40);
         thirdSet.setStroke(Color.BLACK);
-        thirdSet.setFill(Color.DARKGOLDENROD);
         thirdSet.setArcHeight(20);
         thirdSet.setArcWidth(20);
         thirdSet.setStrokeWidth(3);
 
-        getChildren().addAll(firstSet, secondSet, thirdSet);
-    }
-
-
-    public static void Compare(Tiles tiles) {
-
-
-        tiles.setOnMouseClicked(event -> tiles.firstSet.setStroke(Color.ORANGE));
-
-        if (tiles.firstSet.getFill().equals(tiles.secondSet.getFill())) {
-            tiles.firstSet.setVisible(false);
-            tiles.secondSet.setVisible(false);
-        }
-        if (tiles.secondSet.getFill().equals(tiles.thirdSet.getFill())) {
-            tiles.secondSet.setVisible(false);
-            tiles.thirdSet.setVisible(false);
-        }
-
-        if (tiles.firstSet.getFill().equals(tiles.thirdSet.getFill())) {
-            tiles.firstSet.setVisible(false);
-            tiles.thirdSet.setVisible(false);
-        }
+        getChildren().addAll(addColor(firstSet), addColor(secondSet), addColor(thirdSet));
     }
 
 }
