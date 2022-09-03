@@ -85,58 +85,6 @@ public class Tiles extends StackPane {
         }
     }
 
-
-
-       /* Tiles Tiles = null;
-        Tiles STiles = null;
-        HashMap<Integer, Rectangle> map1 = new HashMap<>();
-
-        map1.put(1, firstSet);
-        map1.put(2, secondSet);
-        map1.put(3, thirdSet);
-
-        HashMap<Integer, Rectangle> map2 = new HashMap<>();
-        map2.put(1, firstSet);
-        map2.put(2, secondSet);
-        map2.put(3, thirdSet);
-
-        if(map1.get(1).equals(map2.get(1))){
-            firstSet.setVisible(false);
-            secondSet.setVisible(false);
-            map1.remove(1, firstSet);
-            map2.remove(1, firstSet);
-
-        }
-        else {
-            map1.get(1).setVisible(true);
-            map2.get(2).setVisible(true);
-        }*/
-
-
-
-      /* HashSet<Rectangle> check = new HashSet<>(map2.values());
-       check.addAll(map1.values());
-       check.remove(map.)
-
-       HashSet<Rectangle> tile2 = new HashSet<>();
-       tile2.add(firstSet);
-       tile2.add(secondSet);
-       tile2.add(thirdSet);*/
-
-
-
-      /*  Tiles myTile = null;
-        Tiles otherTile;
-
-        List<Tiles> tiles = new ArrayList<>();
-        tiles.add(myTile);
-        tiles.add(otherTile);
-
-        if(myTile.firstSet.getFill().equals(otherTile.firstSet.getFill())) {
-            myTile.firstSet.setVisible();*/
-
-
-
 }
 
 

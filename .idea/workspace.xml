@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="943f6c71-764e-493a-b61e-250c6dfb93dd" name="Changes" comment="New Readme input">
-      <change afterPath="$PROJECT_DIR$/src/mytiles/Board.java" afterDir="false" />
+    <list default="true" id="943f6c71-764e-493a-b61e-250c6dfb93dd" name="Changes" comment="Game actually runs in main now, but I had to take away random colors to do that. So now I need to figure that out.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mytiles/TProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mytiles/TProject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mytiles/Tiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mytiles/Tiles.java" afterDir="false" />
@@ -49,7 +48,7 @@
       <updated>1662067598739</updated>
       <workItem from="1662067600637" duration="31811000" />
       <workItem from="1662133633589" duration="14247000" />
-      <workItem from="1662157343405" duration="26265000" />
+      <workItem from="1662157343405" duration="26617000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1662067680561</created>
@@ -149,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662070389579</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Game actually runs in main now, but I had to take away random colors to do that. So now I need to figure that out.">
+      <created>1662187692383</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662187692383</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +179,7 @@
     <MESSAGE value="Commited Classes into package" />
     <MESSAGE value="Read me making sure" />
     <MESSAGE value="New Readme input" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Readme input" />
+    <MESSAGE value="Game actually runs in main now, but I had to take away random colors to do that. So now I need to figure that out." />
+    <option name="LAST_COMMIT_MESSAGE" value="Game actually runs in main now, but I had to take away random colors to do that. So now I need to figure that out." />
   </component>
 </project>

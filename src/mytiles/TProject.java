@@ -69,8 +69,7 @@ public class TProject extends Application {
                 }
 
             }
-            /*System.out.println("NumTiles: " + numTiles);
-*/
+
             return root;
         }
 
