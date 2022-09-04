@@ -34,19 +34,11 @@ public class TProject extends Application {
         Label text = new Label(newStreak(0, 0)[0]);
         Label text1 = new Label(newStreak(0, 0)[1]);
 
-//        Text text = new Text("Current Score = " + currScore);
-//        Text text1 = new Text("   Longest Streak = " + longScore);
-
-
         root.add(text, 7, 0);
         root.add(text1, 10, 0);
 
-
         for (int i = 0; i < BOARD_WIDTH; i++) {
             for (int j = 0; j < BOARD_HEIGHT; j++) {
-
-
-
 
                 Tiles tiles = new Tiles();
                 tiles.setTranslateX(i * 100);
@@ -65,13 +57,12 @@ public class TProject extends Application {
                     mouseClick++;
                     if (mouseClick == 1) {
                         tile1 = tiles;
-                        //tile1.firstSet.setStroke(Color.ORANGE);
-                      //  System.out.println("First Click");
+
                     }
                         else if (mouseClick == 2 && tile1 != tiles) {
-                           // System.out.println("Second Click");
+
                             tile2 = tiles;
-                           // tile2.firstSet.setStroke(Color.ORANGE);
+
 
                         if (tile1.firstSet.getFill() == tile2.firstSet.getFill() ||
                         tile1.secondSet.getFill() == tile2.secondSet.getFill() ||
@@ -121,21 +112,11 @@ public class TProject extends Application {
                         text.setText(newStreak(currScore, longScore)[0]);
                         text1.setText(newStreak(currScore, longScore)[1]);
 
-
-
-                        
                     }
-
-
                 });
 
                 root.add(tiles, BOARD_WIDTH, BOARD_HEIGHT);
-
-
             }
-
-
-
         }
         return root;
     }
