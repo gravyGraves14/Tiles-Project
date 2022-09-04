@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TProject:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="943f6c71-764e-493a-b61e-250c6dfb93dd" name="Changes" comment="Keeping the current streak and counting the longest streak doesn't work to well with a list but works better with an array">
+    <list default="true" id="943f6c71-764e-493a-b61e-250c6dfb93dd" name="Changes" comment="Finally figured out how to create a list with my newStreak() method in main. These are also final changes.">
+      <change afterPath="$PROJECT_DIR$/ObjectLayout/Main Game Loop.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TProject.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mytiles/TProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mytiles/TProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mytiles/Tiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mytiles/Tiles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,13 +40,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/gravy/tproject/TProject/TProject",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="TProject.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/TProject_jar/TProject.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.TProject.jar" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,7 +74,8 @@
       <workItem from="1662133633589" duration="14247000" />
       <workItem from="1662157343405" duration="31206000" />
       <workItem from="1662240238853" duration="6792000" />
-      <workItem from="1662256939241" duration="9989000" />
+      <workItem from="1662256939241" duration="10184000" />
+      <workItem from="1662317608340" duration="3885000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1662067680561</created>
@@ -177,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662266921196</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Keeping the current streak and counting the longest streak doesn't work to well with a list but works better with an array.">
+      <created>1662267121556</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1662267121556</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +237,8 @@
     <MESSAGE value="Game actually runs in main now, but I had to take away random colors to do that. So now I need to figure that out." />
     <MESSAGE value="I was able to add the randomized colors again and I can get pairs to disappear but there are still some left over." />
     <MESSAGE value="Keeping the current streak and counting the longest streak doesn't work to well with a list but works better with an array" />
-    <option name="LAST_COMMIT_MESSAGE" value="Keeping the current streak and counting the longest streak doesn't work to well with a list but works better with an array" />
+    <MESSAGE value="Keeping the current streak and counting the longest streak doesn't work to well with a list but works better with an array." />
+    <MESSAGE value="Finally figured out how to create a list with my newStreak() method in main. These are also final changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finally figured out how to create a list with my newStreak() method in main. These are also final changes." />
   </component>
 </project>

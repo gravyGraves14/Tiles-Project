@@ -1,11 +1,8 @@
 package mytiles;
 
-import javafx.scene.Node;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
-
 import java.util.*;
 import java.util.List;
 
@@ -18,7 +15,7 @@ public class Tiles extends StackPane {
 
     /*This method shuffles the colors*/
      public static Color[] myShuffle() {
-        Color[] colorVal = {Color.RED, Color.BLUE, Color.GREEN, Color.YELLOW, Color.PINK, Color.BLUEVIOLET};
+        Color[] colorVal = {Color.RED, Color.BLUE, Color.GREEN, Color.YELLOW, Color.PINK};
 
         List<Color> list = Arrays.asList(colorVal);
         Collections.shuffle(list);
@@ -48,11 +45,7 @@ public class Tiles extends StackPane {
              rect.setFill(colorVal[choice]);
          }
          return rect;
-
     }
-
-
-
 
     /*This Tiles constructor is just creating rectangles
      * to display on the board*/

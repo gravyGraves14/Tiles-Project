@@ -6,14 +6,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Text;
-import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import javafx.scene.control.TextArea;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class TProject extends Application {
 
@@ -31,8 +26,8 @@ public class TProject extends Application {
         GridPane root = new GridPane();
         root.setPrefSize(500, 750);
 
-        Label text = new Label(newStreak(0, 0)[0]);
-        Label text1 = new Label(newStreak(0, 0)[1]);
+        Label text = new Label(newStreak(0, 0).get(0));
+        Label text1 = new Label(newStreak(0, 0).get(1));
 
         root.add(text, 7, 0);
         root.add(text1, 10, 0);
@@ -44,25 +39,22 @@ public class TProject extends Application {
                 tiles.setTranslateX(i * 100);
                 tiles.setTranslateY(j * 100);
 
-                List<Tiles> myTiles = new ArrayList<>();
-                myTiles.add(tiles);
-                myTiles.add(tile1);
-                myTiles.add(tile2);
 
-                                /*Action event that lets the player compare tiles
-                * based on color*/
+                /*Action event that lets the player compare tiles
+                * based on color, then gradually moves through if and
+                * else statements to determine what colors match*/
                 tiles.setOnMouseClicked(event -> {
-
 
                     mouseClick++;
                     if (mouseClick == 1) {
                         tile1 = tiles;
+                        tile1.firstSet.setStroke(Color.ORANGE);
 
                     }
                         else if (mouseClick == 2 && tile1 != tiles) {
 
                             tile2 = tiles;
-
+                            tile2.firstSet.setStroke(Color.ORANGE);
 
                         if (tile1.firstSet.getFill() == tile2.firstSet.getFill() ||
                         tile1.secondSet.getFill() == tile2.secondSet.getFill() ||
@@ -73,45 +65,38 @@ public class TProject extends Application {
                                 longScore = currScore;
                             }
                         }
-                            else {
-                                currScore = 0;
-                            }
+
+                        else {
+                            currScore = 0;
+                        }
 
                         if(tile1.firstSet.getFill() == tile2.firstSet.getFill()) {
-                                tile1.firstSet.setVisible(false);
-                                tile2.firstSet.setVisible(false);
-                                myTiles.remove(tile1.firstSet);
-                                myTiles.remove(tile2.firstSet);
-                            }
+                            tile1.firstSet.setVisible(false);
+                            tile2.firstSet.setVisible(false);
+
+                        }
 
                         if(tile1.secondSet.getFill() == tile2.secondSet.getFill()) {
                             tile1.secondSet.setVisible(false);
                             tile2.secondSet.setVisible(false);
-                            myTiles.remove(tile1.secondSet);
-                            myTiles.remove(tile2.secondSet);
+
                         }
 
                         if(tile1.thirdSet.getFill() == tile2.thirdSet.getFill()) {
                             tile1.thirdSet.setVisible(false);
                             tile2.thirdSet.setVisible(false);
-                            myTiles.remove(tile1.thirdSet);
-                            myTiles.remove(tile2.thirdSet);
+
                         }
+
+                        tile1.firstSet.setStroke(Color.BLACK);
+                        tile2.firstSet.setStroke(Color.BLACK);
 
                         mouseClick = 0;
 
-                        /*System.out.println("Current score = " + currScore);
-                        System.out.println("Longest Score = " + longScore);*/
+                        newStreak(currScore, longScore);
 
-
-                       newStreak(currScore, longScore);
-
-                      /* text.setText(newStreak(currScore, longScore).toString());
-                       text1.setText(newStreak(currScore, longScore).toString());*/
-
-                        text.setText(newStreak(currScore, longScore)[0]);
-                        text1.setText(newStreak(currScore, longScore)[1]);
-
+                        text.setText(newStreak(currScore, longScore).get(0));
+                        text1.setText(newStreak(currScore, longScore).get(1));
                     }
                 });
 
@@ -121,20 +106,15 @@ public class TProject extends Application {
         return root;
     }
 
-   /* public List<String> newStreak(int currScore, int longScore) {
+
+    /*This newStreak method takes in my current record and longest
+    * into a list and adds it to the parent method above*/
+    public List<String> newStreak(int currScore, int longScore) {
         List<String> myStreak = new ArrayList<>();
         myStreak.add("Current Score = " + currScore);
-        myStreak.add("Longest Streak = " + longScore);
-        return myStreak;
-    }*/
-
-    public String[] newStreak(int currScore, int longScore) {
-        String[] myStreak = new String[2];
-        myStreak[0] = ("Current Score = " + currScore);
-        myStreak[1] = ("   Longest Streak = " + longScore);
+        myStreak.add("  Longest Streak = " + longScore);
         return myStreak;
     }
-
 
     @Override
     public void start(Stage primaryStage) throws Exception {
