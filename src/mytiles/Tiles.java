@@ -18,8 +18,7 @@ public class Tiles extends StackPane {
 
     /*This method shuffles the colors*/
      public static Color[] myShuffle() {
-        Color[] colorVal = {Color.RED, Color.BLUE, Color.GREEN, Color.YELLOW, Color.DARKCYAN, Color.BLUEVIOLET, Color.PINK, Color.BURLYWOOD,
-                Color.ORANGE, Color.GREY};
+        Color[] colorVal = {Color.RED, Color.BLUE, Color.GREEN, Color.YELLOW, Color.PINK, Color.BLUEVIOLET};
 
         List<Color> list = Arrays.asList(colorVal);
         Collections.shuffle(list);
